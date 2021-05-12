@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "UX_UI_HW_17",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,0 +1,384 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #723885;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.headerContainer {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #234078;
+    flex-shrink: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #234078;
+    color: white;
+    flex-shrink: 1;
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a.active {
+    color: white;
+}
+.burger {
+    display: none;
+    flex-direction:column;
+}
+.burger:hover {
+    cursor: pointer;
+}
+.active {
+    display: flex;
+}
+.bar {
+    width: 45px;
+    height: 10px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 6px;
+}
+.burgerContainer {
+    display: none;
+    list-style: none;
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 48px;
+    
+}
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #F2D533;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+.active {
+    display: flex;
+  }
+.nav li:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+}
+.logoName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+}
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-left: 30px;
+}
+.name {
+    color: white;
+    padding-left: 30px;
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.introduction {
+    display: grid;
+    color: white;
+    width: 100%;
+    padding-top: 100px;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "introLeft introRight"
+}
+.introLeft {
+    grid-area: introLeft;
+    background-color:  #299798;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+.introRight {
+    grid-area: introRight;
+    background-image: url(/images/img-alyssa-crop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.introRight img {
+    object-fit: contain;
+    height: auto;
+}
+.introText {
+    padding-top: 25px;
+    padding-left: 100px;
+}
+.introIcons {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+}
+.introIcons:hover {
+    cursor: pointer;
+}
+.iconLinkedin:hover {
+    transform: scale(1.2, 1.2);
+}
+.iconEmail:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+.myWork {
+    display: grid;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    grid-template-columns: 390px 390px;
+    grid-template-rows: 150px 1fr 1fr;
+    grid-template-areas:
+    "pageTitle pageTitle"
+    "project1 project2"
+    "project3 project4"
+}
+.pageTitle {
+    color: #723885;
+    grid-area: pageTitle;
+    justify-self: center; 
+}
+.project1 {
+    grid-area: project1;
+    display: flex;
+    flex-direction: column;
+}
+.project2 {
+    grid-area: project2;
+    display: flex;
+    flex-direction: column;
+}
+.project3 {
+    grid-area: project3;
+    display: flex;
+    flex-direction: column;
+}
+.project4 {
+    grid-area: project4;
+    display: flex;
+    flex-direction: column;
+}
+.projectImage:hover {
+    cursor: pointer;
+    outline: 5px solid #F2D533;
+    outline-offset: -5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.footer {
+    display: grid;
+    width: 100%;
+    color: white;
+    background-color: #234078;
+    grid-template-columns: 608px 832px;
+    grid-template-rows: 100x 100px 100px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    grid-template-areas:
+    "nothing footerTitle"
+    "iconLinkedin descriptionLinkedin"
+    "iconEmail descriptionEmail"
+}
+.nothing {
+    grid-area: nothing;
+}
+.footerTitle {
+    grid-area: footerTitle;
+    justify-self: flex-start;
+    text-decoration: underline solid #F2D533;
+}
+.iconLinkedin {
+    grid-area: iconLinkedin;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionLinkedin {
+    grid-area: descriptionLinkedin;
+    justify-self: flex-start;
+}
+.iconEmail {
+    grid-area: iconEmail;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionEmail {
+    grid-area: descriptionEmail;
+    justify-self: flex-start;
+}
+
+@media only screen and (max-width: 1100px){
+.headerContainer {
+    z-index: 2;
+    position: fixed;
+    align-items: flex-end;
+}
+    .burgerContainer {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        color: white;
+        padding-top: 100px;
+        padding-bottom: 15px;
+        width: 150px;
+        align-items: space-between;
+        background-color: #234078;
+        border: 1px solid red;
+    }
+    .logoName {
+        display: flex;
+        align-items: flex-end;
+    }
+    .logo {
+        padding-left: 25px;
+        padding-bottom: 25px;
+        align-items: flex-end; 
+    }
+    .name {
+        font-size: 24px;
+        align-items: center;
+        padding-left: 75px;
+    }
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        
+    }
+
+    .introduction {
+        position: absolute;
+        display: grid;
+        padding-top: 100px;
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "introRight"
+        "introLeft"
+    }
+    .introText {
+        padding-left: 25px;
+        padding-top: 0px;
+    }
+    .introIcons {
+        justify-content: center;
+    }
+
+    .myWork {
+        padding-top: 500px;
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        grid-template-rows: 150px 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "pageTitle"
+        "project1"
+        "project2"
+        "project3"
+        "project4"
+    }
+    .pageTitle {
+        grid-area: pageTitle;
+    }
+    .project1 {
+        grid-area: project1;
+        width: 400px;
+        justify-self: center;
+    }
+    .project2 {
+        grid-area: project2;
+        width: 400px;
+        justify-self: center;
+    }
+    .project3 {
+        grid-area: project3;
+        width: 400px;
+        justify-self: center;
+    }
+    .project4 {
+        grid-area: project4;
+        width: 400px;
+        justify-self: center;
+    }
+    .projectImage {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+    .projectImage img {
+        width: 400px;
+        height: 400px;
+    }
+
+}
