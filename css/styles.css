@@ -154,7 +154,7 @@ a.active {
 }
 .introRight {
     grid-area: introRight;
-    background-image: url(/images/img-alyssa-crop.png);
+    background-image: url("/images/img-alyssa-crop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
