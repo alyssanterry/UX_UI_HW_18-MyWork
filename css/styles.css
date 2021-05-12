@@ -290,7 +290,6 @@ a.active {
         width: 150px;
         align-items: space-between;
         background-color: #234078;
-        border: 1px solid red;
     }
     .logoName {
         display: flex;
